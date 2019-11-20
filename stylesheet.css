@@ -1,0 +1,135 @@
+:root {
+    --default-font: font-family: Larsseit,Helvetica Neue,Helvetica,Arial,sans-serif;
+    --monochrome: white;
+    --monochrome-alt: black;
+    --accent-light: #cccccc;
+}
+
+body::before, body::after {
+    height: 100px;
+    width: 100vw;
+    background-color: #ee534f;
+    color: #27428c;
+    font-family: Larsseit,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+body {
+    background-color: var(--monochrome-alt);
+    color: var(--monochrome);
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+a:link {
+    color: var(--monochrome);
+}
+
+a:visited, 
+a:hover, 
+a:active {
+    color: var(--accent-light);
+}
+
+#content {
+    width: 50vw;
+    margin: 0 25vw 0 25vw;
+    background-color: var(--monochrome-alt);
+    color: var(--monochrome);
+}
+
+.is-marginless {
+    margin: 0 !important;
+}
+
+.fullImg {
+    /*height: 100vh;*/
+    width: 50vw;
+}
+
+.fullTitle,
+.fullSubTitle {
+    text-align: center;
+}
+
+.extraExtraLargeText {
+    font-size: 200%;
+}
+
+.extraLargeText {
+    font-size: 150%;
+}
+
+.largeText {
+    font-size: 125%;
+}
+
+/*.extraLargeText {*/
+/*    font-size: 200%;*/
+/*}*/
+
+.smallText {
+    font-size: 75%;
+}
+
+.button {
+    margin: 4em;
+    border: 2px solid var(--accent-light);
+    background: var(--monochrome);
+    color: var(--monochrome-alt) !important;
+}
+
+.dropdownTrigger {
+    background: var(--monochrome);
+    color: var(--monochrome-alt) !important;
+}
+
+.dropdownTrigger:hover {
+    border: 2px solid var(--accent-light);
+    background: var(--monochrome-alt);
+    color: var(--monochrome) !important;
+}
+
+.dropdownTrigger + .dropdownElement {
+    display: none;
+}
+
+.dropdownTrigger:hover + .dropdownElement,
+.dropdownTrigger + .dropdownElement:hover {
+    display: block;
+}
+
+.footerElement {
+    margin-bottom: 8vh;
+}
+
+@media only screen and (orientation: portrait) {
+
+    /*body {*/
+    /*    width: calc(100vw - 10vw);*/
+    /*}*/
+
+    #content {
+        width: calc(100vw - 2.5vw);
+        margin: 0;
+    }
+    
+    .fullImg {
+        /*height: 100vh;*/
+        width: 98vw;
+        margin: 0 1px 0 1px;
+    }
+    
+    /*.fullTitle {*/
+    /*    font-size: 500%;*/
+    /*}*/
+    
+    /*.fullSubTitle {*/
+    /*    font-size: 300%;*/
+    /*}*/
+    
+    /*.text {*/
+    /*    font-size: 200%;*/
+    /*}*/
+    
+}
